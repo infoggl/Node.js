@@ -33,7 +33,7 @@ echo -e "'use strict'; \n \nvar myCode = require('./code.js'); //The string on t
 echo -e "'use strict';  \nvar number = 1; \nexports.outputNumber = number; \n" > code.js
 npm install
 echo -n "You are now set up to do Test Driven Development with NodeJS. Your project directory is located at ~/"$projectName"."
-echo "Inside your project directory, you will see a spec.js file for specifying the output requirements of your code. \nThere is also a code.js file which is where you can place the code which you want to test. \nThese two files already have some sample code in them. \nType navigate to your project directory and type  npm test  to see whether the code passes the output requirements of the spec.js file".
+echo "Inside your project directory, you will see a spec.js file for specifying the output requirements of your code. \nThere is also a code.js file which is where you can place the code which you want to test. \nThese two files already have some sample code in them. \nNnavigate to your project directory and type  npm test  to see whether the code passes the output requirements of the spec.js file".
 
 
 
