@@ -1,8 +1,8 @@
 #!/bin/bash
 
 cd /tmp
-#wget http://nodejs.org/dist/v0.10.32/node-v0.10.32-linux-x64.tar.gz
-#tar xvf node-v0.10.32-linux-x64.tar.gz
+wget http://nodejs.org/dist/v0.10.32/node-v0.10.32-linux-x64.tar.gz
+tar xvf node-v0.10.32-linux-x64.tar.gz
 cd node-v0.10.32-linux-x64/
 cp * /usr/local/ -r
 cd ~
@@ -18,7 +18,6 @@ cd $projectName
 npm install
 sed -i -e '$ i , "devDependencies": { \n  "mocha": "*", \n  "should": ">= 0.0.1" \n } ' package.json
 npm install
-#mv  test test.old
 mkdir test
 cd test
 echo -n "The current directory before creating mocha.opts: "
