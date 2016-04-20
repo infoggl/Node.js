@@ -20,11 +20,8 @@ sed -i -e '$ i , "devDependencies": { \n  "mocha": "*", \n  "should": ">= 0.0.1"
 npm install
 mkdir test
 cd test
-echo -n "The current directory before creating mocha.opts: "
-pwd
-sleep 1
 echo -e "--require should \n--ui bdd \n--recursive" > mocha.opts
-cd ~$projectName
+cd ~/$projectName
 sed -i -e '$ i , "devDependencies": { \n  "mocha": "*", \n  "should": ">= 0.0.1" \n } ' package.json
 sed -i -e '/scripts/ a \    "test": "node_modules/.bin/mocha -w",' package.json
 npm install
