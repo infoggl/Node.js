@@ -2,8 +2,8 @@
 #Created by infoggl, 23 April 2016.
 
 cd /tmp
-#wget http://nodejs.org/dist/v0.10.32/node-v0.10.32-linux-x64.tar.gz
-#tar xvf node-v0.10.32-linux-x64.tar.gz
+wget http://nodejs.org/dist/v0.10.32/node-v0.10.32-linux-x64.tar.gz
+tar xvf node-v0.10.32-linux-x64.tar.gz
 cd node-v0.10.32-linux-x64/
 cp * /usr/local/ -r
 cd ~
