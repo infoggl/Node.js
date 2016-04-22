@@ -1,8 +1,9 @@
 #!/bin/bash
+#Created by infoggl, 23 April 2016.
 
 cd /tmp
-wget http://nodejs.org/dist/v0.10.32/node-v0.10.32-linux-x64.tar.gz
-tar xvf node-v0.10.32-linux-x64.tar.gz
+#wget http://nodejs.org/dist/v0.10.32/node-v0.10.32-linux-x64.tar.gz
+#tar xvf node-v0.10.32-linux-x64.tar.gz
 cd node-v0.10.32-linux-x64/
 cp * /usr/local/ -r
 cd ~
@@ -33,7 +34,8 @@ npm install
 clear
 printf '\nCongratulations!\n\nYou are now set up to do Test Driven Development with NodeJS. Your project directory is located at ~/'$projectName'.'
 sleep 0.5
-printf '\nInside your project directory, you will see a ''\e[0;32m%-6s\e[m' "spec.js "
+printf '\nInside your project directory, you will see a folder called ''\e[0;32m%-6s\e[m' "test, "
+printf 'containing a ''\e[0;32m%-6s\e[m' "spec.js "
 printf 'file for specifying the output requirements of your code. \n\nThere is also a ''\e[0;32m%-6s\e[m' "code.js "
-printf 'file which is where you can place the code which you want to test. \nThese two files already have some sample code in them to get you started. \n\nNavigate to your project directory and type''\e[0;32m%-6s\e[m' " npm test "
+printf 'file in the test folder, which is where you can place the code which you want to test. \nThese two files already have some sample code in them to get you started. \n\nNavigate to your project directory and type''\e[0;32m%-6s\e[m' " npm test "
 printf 'to see whether the code passes the output requirements of the spec.js file. \n\n'
